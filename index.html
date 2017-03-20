@@ -3,8 +3,20 @@
 <head>
   <title></title>
 </head>
+<script type="text/javascript">
+  var key = ''
+</script>
 <body>
 <a href="https://api.instagram.com/oauth/authorize/?client_id=a998cbb2d9de4b6ea3adf56c467dd9a8&redirect_uri=http://nstgrm.herokuapp.com/index.html&response_type=token">Get Started</a>
-
 </body>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function(event) { 
+  //do work
+    if(window.location.hash){
+      key = window.location.hash.split("=")[1]
+      debugger
+    }
+});
+
+</script>
 </html>
